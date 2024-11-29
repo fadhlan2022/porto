@@ -8,6 +8,8 @@ import ProjectPage from "./pages/ProjectPage";
 import SkillsPage from "./pages/SkillsPage";
 import FaqPage from "./pages/FaqPage";
 import SyaratKetenPage from "./pages/SyaratKetenPage";
+import FeedsPage from "./pages/FeedsPage";
+import LoginPage from "./pages/FeedsPage";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/skills" Component={SkillsPage} />
         <Route path="/faq" Component={FaqPage} />
         <Route path="/syaratketen" Component={SyaratKetenPage} />
+        <Route path="/feeds" Component={FeedsPage} />
+        <Route path="/login" Component={LoginPage} />
       </Routes>
 
       <FooterComponent />

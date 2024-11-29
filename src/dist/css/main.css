@@ -231,13 +231,13 @@ header {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: none;
+  /* background: none; */
   border: none;
-  font-size: 1.5rem; /* Ukuran font yang proporsional */
+  font-size: 1.5rem;
   cursor: pointer;
   color: #333;
-  padding: 5px; /* Tambahkan padding di sekitar tombol */
-  border-radius: 50%; /* Membuat tombol bulat */
+  /* padding: 5px;
+  border-radius: 50%; */
   transition: background-color 0.2s, color 0.2s; /* Transisi halus untuk efek hover */
 }
 
@@ -356,12 +356,12 @@ header {
 }
 
 .testimonial-page .testimonial .people img {
-  width: 30%;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
+  width: 50%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 /* END STYLE TESTIMONIAL */
 
@@ -409,9 +409,109 @@ header {
 }
 /* END STYLE FAQ */
 
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 /* STYLE FOOTER */
 .footer {
   width: 100%;
   min-height: 100vh;
 }
 /* END STYLE FOOTER */
+
+.contact-form {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* background-color: var(--primary-color); */
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+.contact-form-section {
+  background-color: #f9f9f9; /* Warna background untuk formulir */
+  padding: 50px 0;
+}
+
+.contact-form-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form-section p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.contact-form-section form {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow form */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.feeds-page {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.feed-card {
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.feed-card:hover {
+  transform: scale(1.02);
+}
+
+.feed-card h5 {
+  color: #343a40;
+}
+
+.feed-card p {
+  margin-bottom: 0;
+}

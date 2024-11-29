@@ -47,11 +47,11 @@ const NavbarComponent = () => {
                 );
               })}
             </Nav>
-            <div className="text-center">
+            {/* <div className="text-center">
               <button className="btn btn-outline-primary rounded-1">
                 Contact Me
               </button>
-            </div>
+            </div> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
